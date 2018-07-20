@@ -20,7 +20,7 @@ aside {
 }
 
 .Navigation {
-    float: right;
+    float: right;    
 }
 
 .logo {
@@ -34,9 +34,9 @@ aside {
     text-align: center;
 }
 
-main div div div div{
+.cont3 > div {
     float: left;
-    width: 25%;
+    width: 24%;
 }
 
 .infoBox {
@@ -52,16 +52,19 @@ main div div div div{
     border: solid black;
     height: 180px;
     display: inline-block;
-    margin-right: 1%;
+    margin-right: 0.5%;
+    margin-top: 10px;
     width: 49%;
+    text-align: center;
 }
 
 .infoBox6 {
     border: solid black;
-    height: 55px;
+    height: 384px;
     width: 20%;
     float: right;
-    padding-top: 326px;
+    text-align: center;
+    margin-top: 1px;
 }
 
 .cf::before,
@@ -78,11 +81,6 @@ main div div div div{
     width: 100%;
 }
 
-p {
-    text-align: center;
-    color: white;
-}
-
 .footer{
     border: solid black;
     margin-top: 10px;
@@ -90,3 +88,56 @@ p {
     height: 180px;
 }
 
+img {
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .cont1,
+    .infoBox2,
+    .cont3 > div {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .infoBox6 {
+        width: 100%;
+        float: none;
+        background-color: brown;
+    }
+
+    .infoBox {
+        display: block;
+        width: 100%;
+        float: none;
+        background-color: brown;
+    }
+
+    .infoBox2,
+    .cont-slider,
+    footer {
+        background-color: dimgrey;
+    }
+
+    header {
+        padding-bottom: 20px;
+        position: relative;
+    }
+    nav a {
+        
+        height: 100px;                        
+        width:  600px;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        right: 47%;
+    }
+    
+}
